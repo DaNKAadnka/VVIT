@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <form action="" method="post">
+        {% if error == "Empty": %}
+        <p>Empty Login or Password</p>
+        {% elif error == "NotFound": %}
+        <p>Wrong Login or Password</p>
+        {% else %}
+        <p>Hello, {{full_name}}! </p>
+        <p>Your Login - {{login}}</p>
+        <p>Your Password - {{password}}</p>
+        {% endif %}
+
+	</p>
+
+    </form>
+</head>
+<body>
+
+</body>
+</html>
